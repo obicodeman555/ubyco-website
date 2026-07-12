@@ -1,0 +1,134 @@
+.ubycoHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(2px);
+  height: 104px;
+  z-index: 999;
+
+  &__innerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 32px;
+
+    & a {
+      color: var(--gray-500);
+      font-size: var(--font-size-sm);
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+  }
+}
+
+.ubycoHeader__navs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.ubycoHeader__homeLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ubycoHeader__navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > li {
+    & > a {
+      padding-inline: 12px;
+      padding-block: 6px;
+
+      &:hover,
+      &.activeNavLink {
+        color: var(--color-black-secondary);
+      }
+    }
+  }
+
+  & > li:not(:last-child) > a {
+    text-transform: capitalize;
+  }
+}
+
+.ubycoHeader__navRightItems {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+
+  & > a.activeNavLink,
+  & > a:hover {
+    color: var(--color-black-secondary);
+  }
+}
+
+//
+.ubycoHeader__dropDownBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tradeOptions {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  z-index: 9999;
+
+  &.hide {
+    display: none;
+  }
+
+  &.show {
+    display: block;
+  }
+}
+.tradeOptions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  & > li {
+    display: flex;
+
+    & > button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-wrap: nowrap;
+      width: 100%;
+      gap: 6px;
+      padding-inline: 10px;
+      height: 48px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-black-primary);
+      box-shadow: 0px 2px 12px 0px #a7a7a733;
+      background-color: var(--color-white);
+      border-radius: 9999px;
+      & > span {
+        letter-spacing: -0.8px;
+      }
+    }
+
+    & > button:hover {
+      border: 0.5px solid var(--color-red-primary);
+      box-shadow: 0px 2px 12px 0px #ff315533;
+    }
+  }
+}
+
+.toggleButton__tradeOptions {
+  letter-spacing: -0.8px;
+  & > svg {
+    transition: transform 200ms ease-in;
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+}

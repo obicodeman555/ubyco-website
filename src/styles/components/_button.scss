@@ -1,0 +1,38 @@
+@use "sass:map";
+@use "../abstract/index";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+$button-variants: (
+  primary: (
+    bg: var(--color-red-primary),
+    color: var(--color-white),
+    hover-bg: var(--color-red-secondary),
+  ),
+
+  black: (
+    bg: var(--color-black-secondary),
+    color: var(--color-white),
+    hover-bg: var(--color-black-primary),
+  ),
+);
+
+@each $name, $key in $button-variants {
+  .btn-#{$name} {
+    @extend .btn;
+    background-color: map.get($key, bg);
+    color: map.get($key, color);
+    &:hover:not(:disabled) {
+      background-color: map.get($key, hover-bg);
+    }
+  }
+}
