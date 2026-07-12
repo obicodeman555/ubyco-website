@@ -1,5 +1,19 @@
+@use "../abstract/function" as *;
 .container {
   max-width: 1240px;
   margin-inline: auto;
   margin-block: 0;
+}
+
+.heading-3 {
+  font-size: rem(20);
+  font-weight: 600;
+  line-height: rem(24);
+  letter-spacing: -1px;
+  color: var(--color-black-secondary-v2);
+}
+
+.text-muted {
+  color: var(--color-text-secondary-grey);
+  font-weight: 400;
 }

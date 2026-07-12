@@ -1,3 +1,4 @@
 export * from "./arrow";
 export * from "./socials";
-export { TradePlatformScreenShot } from "./TradePlatformShot";
+export * from "./TradePlatformShot";
+export * from "./ubyco-custom/CryptoIlustration";

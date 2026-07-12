@@ -1,11 +1,10 @@
-import { LandingHero } from "@/components";
+import { LandingHero, TradeWithConfidence } from "@/components";
 
 export default function Home() {
   return (
     <main className="ubycohub__landingContents">
-      <div className="container">
-        <LandingHero />
-      </div>
+      <LandingHero />
+      <TradeWithConfidence />
     </main>
   );
 }

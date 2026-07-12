@@ -1,0 +1,95 @@
+@use "../../abstract/function" as *;
+
+.twc__mainBlock {
+  background-color: var(--color-white);
+}
+
+.twc__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(12);
+  text-align: center;
+  padding-block-start: rem(124);
+
+  & > h2 {
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: rem(32);
+    max-width: rem(440);
+    text-wrap: wrap;
+    line-height: 40px;
+  }
+
+  & > p {
+    color: var(--color-text-primary-grey);
+    font-weight: 400;
+    line-height: rem(24);
+    max-width: rem(460);
+  }
+}
+
+.twc__contentBlock {
+  display: grid;
+  grid-template-areas:
+    "sellCrypto sellGiftCard"
+    "business business";
+
+  grid-template-columns: 1fr 1fr;
+  gap: rem(16);
+  margin-block-start: rem(56);
+
+  & > div {
+    background-color: var(--bg-color-grey);
+    border-radius: rem(40);
+    padding: rem(28);
+  }
+
+  & > div:nth-child(1) {
+    grid-area: sellCrypto;
+  }
+  & > div:nth-child(2) {
+    grid-area: sellGiftCard;
+  }
+
+  & > div:nth-child(3) {
+    grid-area: business;
+  }
+
+  & > div:nth-child(1),
+  & > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: rem(162);
+
+    & > div:first-of-type {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+      }
+    }
+  }
+
+  & > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+      flex-basis: rem(630);
+    }
+  }
+}

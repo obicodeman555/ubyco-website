@@ -10,16 +10,17 @@
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
+  max-width: max-content;
 }
 
 $button-variants: (
-  primary: (
+  "primary": (
     bg: var(--color-red-primary),
     color: var(--color-white),
     hover-bg: var(--color-red-secondary),
   ),
 
-  black: (
+  "black": (
     bg: var(--color-black-secondary),
     color: var(--color-white),
     hover-bg: var(--color-black-primary),
