@@ -1,0 +1,40 @@
+@use "../../abstract/function" as *;
+
+.whyChooseUs {
+  background-color: var(--color-white);
+  padding-block-start: rem(124);
+  padding-block-end: rem(124);
+}
+
+.whyChooseUs__intro > p {
+  max-width: rem(550);
+}
+
+.whyChooseUs__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(60);
+  margin-top: rem(56);
+}
+
+.whyChooseUs__listItem__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(48);
+  height: rem(48);
+  border-radius: 100%;
+  background-color: var(--bg-color-grey);
+}
+
+.whyChooseUs__listItem {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  & > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+  }
+}

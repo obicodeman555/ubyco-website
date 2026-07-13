@@ -8,8 +8,11 @@ export const TradeWithConfidence = () => {
   return (
     <section className="twc__mainBlock">
       <article className="container">
-        <div className="twc__intro">
-          <h2>Trade Crypto and Gift Cards with Confidence</h2>
+        <div className="twc__mainBlock__intro section-intro">
+          <h2 className="heading-2 stack-vertical">
+            <span>Trade Crypto and Gift Cards </span>
+            <span>with Confidence</span>
+          </h2>
           <p>
             Whether you are selling crypto, exchanging gift cards, or handling
             business-volume trades, Ubycohub gives you a direct human trading

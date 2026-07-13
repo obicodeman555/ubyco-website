@@ -2,31 +2,11 @@
 
 .twc__mainBlock {
   background-color: var(--color-white);
+  padding-block-start: rem(124);
 }
 
-.twc__intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: rem(12);
-  text-align: center;
-  padding-block-start: rem(124);
-
-  & > h2 {
-    font-weight: 500;
-    letter-spacing: -1px;
-    font-size: rem(32);
-    max-width: rem(440);
-    text-wrap: wrap;
-    line-height: 40px;
-  }
-
-  & > p {
-    color: var(--color-text-primary-grey);
-    font-weight: 400;
-    line-height: rem(24);
-    max-width: rem(460);
-  }
+.twc__mainBlock__intro > p {
+  max-width: rem(460);
 }
 
 .twc__contentBlock {
