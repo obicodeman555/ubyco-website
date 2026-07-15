@@ -2,7 +2,7 @@ import { TradePlatformScreenShotV3 } from "@/assets/svgs";
 
 export const BuiltOnTrust = () => {
   return (
-    <section className="section-padding">
+    <section className="sectionBlock">
       <div className="container">
         <article className="bot__innerContent">
           <div className="bot__definitionContent">

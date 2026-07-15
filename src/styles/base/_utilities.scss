@@ -72,8 +72,9 @@
   flex-direction: column;
 }
 
-.section-padding {
+.sectionBlock {
   padding-block: rem(100);
+  margin-block-end: rem(24);
 }
 
 .safetyNote__contentBlock {
