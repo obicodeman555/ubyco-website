@@ -71,3 +71,33 @@
   display: flex;
   flex-direction: column;
 }
+
+.section-padding {
+  padding-block: rem(100);
+}
+
+.safetyNote__contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: rem(463);
+  text-align: center;
+  gap: rem(24);
+}
+
+.safetyNote__text {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 420px;
+  color: var(--text-primary-grey-color);
+
+  & > span:nth-child(1) {
+    font-weight: 500;
+  }
+}
+
+.safetyNote__ctas {
+  display: flex;
+  align-items: center;
+  gap: rem(14);
+}

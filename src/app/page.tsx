@@ -1,6 +1,8 @@
 import {
+  BuiltOnTrust,
   HowTradingWorks,
   LandingHero,
+  PopularGCSupport,
   SupportedCryptoAssets,
   TradeWithConfidence,
   WhyChooseUbycohub,
@@ -14,6 +16,8 @@ export default function Home() {
       <WhyChooseUbycohub />
       <HowTradingWorks />
       <SupportedCryptoAssets />
+      <PopularGCSupport />
+      <BuiltOnTrust />
     </main>
   );
 }

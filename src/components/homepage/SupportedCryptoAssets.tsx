@@ -7,6 +7,7 @@ import {
   CryptoAssetsIllustration,
   DottedBackground,
 } from "@/assets/svgs";
+import Link from "next/link";
 
 export const SupportedCryptoAssets = () => {
   return (
@@ -83,13 +84,9 @@ export const SupportedCryptoAssets = () => {
                   <span>Suitable for merchants and vendors</span>
                 </li>
               </ul>
-              <button
-                type="button"
-                className="btn-primary"
-                onClick={() => alert("hello")}
-              >
+              <Link href={""} className="btn-primary">
                 Learn more
-              </button>
+              </Link>
             </div>
           </div>
         </div>

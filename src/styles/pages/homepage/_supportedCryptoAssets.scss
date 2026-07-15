@@ -45,7 +45,7 @@
   grid-template-columns: minmax(300px, 1.5fr) minmax(450px, 2fr);
   grid-template-rows: rem(584);
   gap: 12px;
-  padding-block: rem(100);
+  padding-block-start: rem(100);
 }
 
 .sca__bottomContent__imgContainer,
@@ -106,5 +106,38 @@
     display: flex;
     align-items: center;
     gap: rem(12);
+  }
+}
+
+.gcSupport__innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(64);
+}
+
+.gcSupport__contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(64);
+}
+
+.gcSupport__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16);
+  & > li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: rem(8);
+    width: rem(69);
+
+    & > span {
+      font-size: rem(12);
+      color: var(--text-primary-grey-color);
+    }
   }
 }
