@@ -1,5 +1,6 @@
 import {
   BuiltOnTrust,
+  FAQs,
   HowTradingWorks,
   LandingHero,
   PopularGCSupport,
@@ -18,6 +19,7 @@ export default function Home() {
       <SupportedCryptoAssets />
       <PopularGCSupport />
       <BuiltOnTrust />
+      <FAQs />
     </main>
   );
 }

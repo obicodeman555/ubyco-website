@@ -5,3 +5,4 @@ export { HowTradingWorks } from "./HowTradingWorks";
 export { SupportedCryptoAssets } from "./SupportedCryptoAssets";
 export { PopularGCSupport } from "./PopularGCSupport";
 export { BuiltOnTrust } from "./BuiltOnTrust";
+export { FAQs } from "./FAQs";

@@ -1,39 +1,53 @@
 @use "sass:map";
 @use "../abstract/index";
+@use "../abstract/function" as *;
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 8px 14px;
-  border-radius: 9999px;
-  font-size: 14px;
+  gap: rem(12);
+  padding: rem(8) rem(14);
+  border-radius: rem(9999);
+  font-size: rem(14);
   font-weight: 500;
   max-width: max-content;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  border: 1px solid transparent;
 }
 
 $button-variants: (
   "primary": (
-    bg: var(--primary-red-color),
-    color: var(--color-white),
-    hover-bg: var(--secondary-red-color),
+    "bg": var(--primary-red-color),
+    "color": var(--color-white),
+    "hover-bg": var(--secondary-red-color),
   ),
 
   "black": (
-    bg: var(--secondary-black-color),
-    color: var(--color-white),
-    hover-bg: var(--primary-black-color),
+    "bg": var(--secondary-black-color),
+    "color": var(--color-white),
+    "hover-bg": var(--primary-black-color),
+  ),
+  "outline": (
+    bg: var(--color-white),
+    color: var(--primary-red-color),
+    hover-bg: var(--lighter-red-color-1),
+    bd-color: var(--primary-red-color),
+    hover-bd-color: transparent,
   ),
 );
 
-@each $name, $key in $button-variants {
+@each $name, $map in $button-variants {
   .btn-#{$name} {
     @extend .btn;
-    background-color: map.get($key, bg);
-    color: map.get($key, color);
+    background-color: map.get($map, bg);
+    color: map.get($map, color);
+    border-color: map.get($map, bd-color);
     &:hover:not(:disabled) {
-      background-color: map.get($key, hover-bg);
+      background-color: map.get($map, hover-bg);
+      border-color: map.get($map, hover-bd-color);
     }
   }
 }

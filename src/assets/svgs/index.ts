@@ -9,3 +9,5 @@ export { ThumbUpOutlineIcon } from "./ThumbUpIcon";
 export { FlowerOutlineIcon } from "./FlowerIcon";
 export { PointerCursorIcon } from "./PointerCursorIcon";
 export { ApexIcon } from "./ApexIcon";
+export { PlusIcon } from "./PlusIcon";
+export { MinusIcon } from "./MinusIcon";
