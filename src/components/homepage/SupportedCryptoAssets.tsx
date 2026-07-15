@@ -1,5 +1,12 @@
-import { CryptoAssestsIllustration } from "@/assets/svgs/ubyco-custom/CryptoAssestsIllustration";
+"use client";
+import Image from "next/image";
 import { type CSSProperties } from "react";
+import smilingMan from "@/assets/images/smiling-man.jpg";
+import {
+  ApexIcon,
+  CryptoAssetsIllustration,
+  DottedBackground,
+} from "@/assets/svgs";
 
 export const SupportedCryptoAssets = () => {
   return (
@@ -17,7 +24,7 @@ export const SupportedCryptoAssets = () => {
         </div>
         <article className="sca__contentBlock">
           <div className="sca__contentAvatar">
-            <CryptoAssestsIllustration />
+            <CryptoAssetsIllustration />
           </div>
           <div className="sca__contentWriteUp">
             <span>
@@ -30,6 +37,62 @@ export const SupportedCryptoAssets = () => {
             </button>
           </div>
         </article>
+
+        <div className="sca__bottomContent">
+          <div className="sca__bottomContent__imgContainer">
+            <Image src={smilingMan} alt="This reprsents a happy customer" />
+          </div>
+          <div className="sca__bottomContent__leftItem">
+            <div className="dotBg__container">
+              <DottedBackground />
+            </div>
+            <div className="sca__bottomContent__writeUp">
+              <div className="sca__bottomContent__writeUp__heading">
+                <h2 className="heading-2">
+                  Built for Individuals and Businesses
+                </h2>
+                <p>
+                  Businesses, vendors, merchants, and high-volume traders can
+                  use Ubycohub for dedicated trading support, bulk crypto
+                  liquidation, and reliable naira settlement.
+                </p>
+              </div>
+              <ul className="sca__bottomContent__list">
+                <li>
+                  <ApexIcon />
+                  <span>Dedicated trading support</span>
+                </li>
+                <li>
+                  <ApexIcon />
+                  <span>Bulk crypto liquidation</span>
+                </li>
+                <li>
+                  <ApexIcon />
+                  <span>Fast naira settlement</span>
+                </li>
+                <li>
+                  <ApexIcon />
+                  <span>Reliable communication</span>
+                </li>
+                <li>
+                  <ApexIcon />
+                  <span>Human-led transaction handling</span>
+                </li>
+                <li>
+                  <ApexIcon />
+                  <span>Suitable for merchants and vendors</span>
+                </li>
+              </ul>
+              <button
+                type="button"
+                className="btn-primary"
+                onClick={() => alert("hello")}
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
