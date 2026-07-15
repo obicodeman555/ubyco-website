@@ -1,6 +1,7 @@
 import {
   HowTradingWorks,
   LandingHero,
+  SupportedCryptoAssets,
   TradeWithConfidence,
   WhyChooseUbycohub,
 } from "@/components";
@@ -12,6 +13,7 @@ export default function Home() {
       <TradeWithConfidence />
       <WhyChooseUbycohub />
       <HowTradingWorks />
+      <SupportedCryptoAssets />
     </main>
   );
 }

@@ -1,0 +1,39 @@
+@use "../../abstract/function" as *;
+
+.sca__mainBlock {
+  padding-block: rem(124);
+}
+
+.sca__contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+  margin-block-start: rem(40);
+}
+
+.sca__contentAvatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sca__contentWriteUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: rem(463);
+  text-align: center;
+  gap: rem(24);
+
+  & > span {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 380px;
+    color: var(--text-primary-grey-color);
+
+    & > span:nth-child(1) {
+      font-weight: 500;
+    }
+  }
+}
