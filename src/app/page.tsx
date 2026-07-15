@@ -1,4 +1,5 @@
 import {
+  HowTradingWorks,
   LandingHero,
   TradeWithConfidence,
   WhyChooseUbycohub,
@@ -10,6 +11,7 @@ export default function Home() {
       <LandingHero />
       <TradeWithConfidence />
       <WhyChooseUbycohub />
+      <HowTradingWorks />
     </main>
   );
 }

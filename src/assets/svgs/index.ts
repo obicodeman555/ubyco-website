@@ -7,3 +7,4 @@ export { UserIconOutline } from "./UserIcon";
 export { CheckMarkIcon } from "./CheckMarkIcon";
 export { ThumbUpOutlineIcon } from "./ThumbUpIcon";
 export { FlowerOutlineIcon } from "./FlowerIcon";
+export { PointerCursorIcon } from "./PointerCursorIcon";

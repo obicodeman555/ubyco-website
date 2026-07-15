@@ -1,3 +1,16 @@
+@use "sass:map";
+
 @function rem($px) {
   @return calc($px / 16) * 1rem;
+}
+
+$z-indexes: (
+  "modal": 5000,
+  "dropdown": 4000,
+  "default": 1,
+  "below": -1,
+);
+
+@function z($layer) {
+  @return map.get($z-indexes, $layer);
 }

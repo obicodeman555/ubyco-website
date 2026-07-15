@@ -46,7 +46,7 @@
 
       &:hover,
       &.activeNavLink {
-        color: var(--color-black-secondary);
+        color: var(--secondary-black-color);
       }
     }
   }
@@ -63,7 +63,7 @@
 
   & > a.activeNavLink,
   & > a:hover {
-    color: var(--color-black-secondary);
+    color: var(--secondary-black-color);
   }
 }
 
@@ -107,7 +107,7 @@
       height: 48px;
       font-size: 14px;
       font-weight: 500;
-      color: var(--color-black-primary);
+      color: var(--primary-black-color);
       box-shadow: 0px 2px 12px 0px #a7a7a733;
       background-color: var(--color-white);
       border-radius: 9999px;
@@ -117,7 +117,7 @@
     }
 
     & > button:hover {
-      border: 0.5px solid var(--color-red-primary);
+      border: 0.5px solid var(--primary-red-color);
       box-shadow: 0px 2px 12px 0px #ff315533;
     }
   }

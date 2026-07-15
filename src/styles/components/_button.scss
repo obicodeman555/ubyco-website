@@ -15,15 +15,15 @@
 
 $button-variants: (
   "primary": (
-    bg: var(--color-red-primary),
+    bg: var(--primary-red-color),
     color: var(--color-white),
-    hover-bg: var(--color-red-secondary),
+    hover-bg: var(--secondary-red-color),
   ),
 
   "black": (
-    bg: var(--color-black-secondary),
+    bg: var(--secondary-black-color),
     color: var(--color-white),
-    hover-bg: var(--color-black-primary),
+    hover-bg: var(--primary-black-color),
   ),
 );
 
