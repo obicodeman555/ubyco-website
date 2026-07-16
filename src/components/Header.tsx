@@ -51,7 +51,8 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="ubycoHeader__navRightItems">
-          <NavLink href="/contact-us">contact us</NavLink>
+          {/* <NavLink href="/contact-us">contact us</NavLink> */}
+          <Link href="">contact us</Link>
           <div className="ubycoHeader__dropDownBlock">
             <button
               className="toggleButton__tradeOptions btn-primary"
