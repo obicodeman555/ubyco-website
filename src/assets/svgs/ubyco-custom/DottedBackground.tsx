@@ -32,3 +32,32 @@ export const DottedBackground = () => {
     </svg>
   );
 };
+export const FooterDottedBackground = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="1440"
+      height="1328"
+      viewBox="0 0 1440 1328"
+      fill="none"
+    >
+      <rect width="1440" height="1328" fill="url(#pattern0_964_2126)" />
+      <defs>
+        <pattern
+          id="pattern0_964_2126"
+          patternUnits="userSpaceOnUse"
+          patternTransform="matrix(12.2579 0 0 12.2579 0 0)"
+          preserveAspectRatio="none"
+          viewBox="0 0 5.57 5.57"
+          width="1"
+          height="1"
+        >
+          <g id="pattern0_964_2126_inner">
+            <circle opacity="0.2" cx="0.5" cy="0.5" r="0.5" fill="#D9D9D9" />
+          </g>
+        </pattern>
+      </defs>
+    </svg>
+  );
+};

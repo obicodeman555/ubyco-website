@@ -10,23 +10,28 @@ export const Header = () => {
 
   const navList = [
     {
-      url: "/about-us",
+      // url: "/about-us",
+      url: "",
       linkName: "about us",
     },
     {
-      url: "/crypto-trading",
+      // url: "/crypto-trading",
+      url: "",
       linkName: "crypto trading",
     },
     {
-      url: "/gift-card-exchange",
+      // url: "/gift-card-exchange",
+      url: "",
       linkName: "gift card exchange",
     },
     {
-      url: "/business",
+      // url: "/business",
+      url: "",
       linkName: "for business",
     },
     {
-      url: "/faqs",
+      // url: "/faqs",
+      url: "",
       linkName: "FAQs",
     },
   ];
@@ -38,8 +43,8 @@ export const Header = () => {
             <Logo />
           </Link>
           <ul className="ubycoHeader__navList">
-            {navList.map((item) => (
-              <li key={item.url}>
+            {navList.map((item, index) => (
+              <li key={index}>
                 <NavLink href={item.url}>{item.linkName}</NavLink>
               </li>
             ))}

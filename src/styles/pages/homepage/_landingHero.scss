@@ -1,12 +1,10 @@
 @use "../../abstract/function" as *;
 
 .ubycohub__landingHero {
-  min-height: 100vh;
+  min-height: 100svh;
   padding-block-start: 104px;
   overflow: hidden;
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
   background-color: rgba(#eee, 0.25);
 }
 
@@ -70,7 +68,7 @@
   gap: 12px;
 }
 
-.ubycohub__landingHero__staticReview {
+.stackReviewIllustration {
   position: relative;
   display: flex;
   width: rem(302);

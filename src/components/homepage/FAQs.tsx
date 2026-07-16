@@ -27,8 +27,6 @@ const FAQItem = ({ item, isOpen, onToggle }: IFAQItemProps) => {
     }
   }, [isOpen]);
 
-  console.log(height);
-
   return (
     <li className="faqItem" style={{ gap: isOpen ? "16px" : "0" }}>
       <button type="button" onClick={onToggle}>

@@ -38,7 +38,7 @@ export const LandingHero = () => {
           </div>
         </article>
 
-        <ul className="ubycohub__landingHero__staticReview">
+        <ul className="stackReviewIllustration">
           <li>
             <span>
               <Image src={heroFooterImage1} alt="" />

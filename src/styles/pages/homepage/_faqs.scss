@@ -66,7 +66,6 @@
     color: var(--text-secondary-color-v2);
     font-weight: 500;
     line-height: rem(21);
-    width: 460px;
-    // border: 1px solid;
+    max-width: rem(460);
   }
 }
