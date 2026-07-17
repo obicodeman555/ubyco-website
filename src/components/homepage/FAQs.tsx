@@ -3,7 +3,9 @@
 import { MinusIcon, PlusIcon } from "@/assets/svgs";
 import Link from "next/link";
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
-
+import Image from "next/image";
+import whatsAppIllustration from "@/assets/images/3d-whatsapp-img.png";
+import telegramIllustration from "@/assets/images/3d-telegram-icon.png";
 export interface IFAQ {
   id: number;
   question: string;
@@ -83,9 +85,9 @@ export const FAQs = () => {
   }, []);
 
   return (
-    <section className="sectionBlock">
+    <section className="sectionBlock faqContent__mainBlock">
       <div className="container">
-        <div className="faqContent">
+        <div className="faqContent__container">
           <h2 className="heading-2">Frequently Asked Questions</h2>
           <div className="faqContent__innerBlock">
             <ul className="faqList">
@@ -103,6 +105,12 @@ export const FAQs = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="whatsAppBlurred">
+        <Image src={whatsAppIllustration} alt="" width={80} height={80} />
+      </div>
+      <div className="telegramBlurred">
+        <Image src={telegramIllustration} alt="" width={80} height={80} />
       </div>
     </section>
   );

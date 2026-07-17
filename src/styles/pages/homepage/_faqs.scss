@@ -1,6 +1,11 @@
 @use "../../abstract/function" as *;
 
-.faqContent {
+.faqContent__mainBlock {
+  position: relative;
+  background-color: #fff;
+}
+
+.faqContent__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,4 +73,76 @@
     line-height: rem(21);
     max-width: rem(460);
   }
+}
+
+// .bitcoinBlurred {
+//   left: rem(150);
+//   top: rem(240);
+// }
+
+// .trionBlurred {
+//   right: rem(214);
+//   bottom: rem(122);
+// }
+
+// .trionBlurred__img {
+//   position: relative;
+//   clip-path: inset(0 0 0 65%);
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 120px;
+//     backdrop-filter: blur(1.75px);
+//   }
+// }
+// .bitcoinBlurred__img {
+//   position: relative;
+//   clip-path: inset(0 65% 0 0);
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     width: 77px;
+//     backdrop-filter: blur(1.75px);
+//   }
+// }
+
+.whatsAppBlurred,
+.telegramBlurred {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(1.35px);
+  }
+
+  & > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.whatsAppBlurred {
+  top: rem(280);
+  left: rem(140);
+}
+.telegramBlurred {
+  top: rem(180);
+  right: rem(250);
 }
