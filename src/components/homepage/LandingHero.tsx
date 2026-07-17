@@ -7,6 +7,7 @@ import {
 import heroFooterImage1 from "@/assets/images/circled-frame-man-illustrator.png";
 import heroFooterImage2 from "@/assets/images/circled-frame-woman-illustration.png";
 import heroFooterImage3 from "@/assets/images/circled-frame-dreadlocked-man.png";
+import coinGroup from "@/assets/images/coin-group-img.png";
 export const LandingHero = () => {
   return (
     <div className="ubycohub__landingHero">
@@ -56,6 +57,17 @@ export const LandingHero = () => {
             </span>
           </li>
         </ul>
+      </div>
+
+      <div className="ubycohub__landingHero__extras bitcoinBlurred">
+        <div className="bitcoinBlurred__img">
+          <Image src={coinGroup} alt="" width={200} />
+        </div>
+      </div>
+      <div className="ubycohub__landingHero__extras trionBlurred">
+        <div className="trionBlurred__img">
+          <Image src={coinGroup} alt="" width={200} />
+        </div>
       </div>
     </div>
   );
