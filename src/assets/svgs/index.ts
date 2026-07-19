@@ -11,3 +11,6 @@ export { PointerCursorIcon } from "./PointerCursorIcon";
 export { ApexIcon } from "./ApexIcon";
 export { PlusIcon } from "./PlusIcon";
 export { MinusIcon } from "./MinusIcon";
+export { HeartIcon } from "./HeartIcon";
+export { SpeedoMeterIcon } from "./Speedometer";
+export { SecurityLockIcon } from "./Lock";

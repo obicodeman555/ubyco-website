@@ -44,13 +44,10 @@
       padding-inline: 12px;
       padding-block: 6px;
 
-      &:hover {
+      &:hover,
+      &.activeNavLink {
         color: var(--secondary-black-color);
       }
-      // &:hover,
-      // &.activeNavLink {
-      //   color: var(--secondary-black-color);
-      // }
     }
   }
 

@@ -10,28 +10,23 @@ export const Header = () => {
 
   const navList = [
     {
-      // url: "/about-us",
-      url: "",
+      url: "/about-us",
       linkName: "about us",
     },
     {
-      // url: "/crypto-trading",
-      url: "",
+      url: "/crypto-trading",
       linkName: "crypto trading",
     },
     {
-      // url: "/gift-card-exchange",
-      url: "",
+      url: "/gift-card-exchange",
       linkName: "gift card exchange",
     },
     {
-      // url: "/business",
-      url: "",
+      url: "/business",
       linkName: "for business",
     },
     {
-      // url: "/faqs",
-      url: "",
+      url: "/faqs",
       linkName: "FAQs",
     },
   ];
@@ -51,8 +46,8 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="ubycoHeader__navRightItems">
-          {/* <NavLink href="/contact-us">contact us</NavLink> */}
-          <Link href="">contact us</Link>
+          <NavLink href="/contact-us">contact us</NavLink>
+
           <div className="ubycoHeader__dropDownBlock">
             <button
               className="toggleButton__tradeOptions btn-primary"

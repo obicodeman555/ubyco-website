@@ -8,6 +8,7 @@ import heroFooterImage1 from "@/assets/images/circled-frame-man-illustrator.png"
 import heroFooterImage2 from "@/assets/images/circled-frame-woman-illustration.png";
 import heroFooterImage3 from "@/assets/images/circled-frame-dreadlocked-man.png";
 import coinGroup from "@/assets/images/coin-group-img.png";
+
 export const LandingHero = () => {
   return (
     <div className="ubycohub__landingHero">
