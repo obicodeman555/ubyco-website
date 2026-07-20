@@ -28,7 +28,7 @@ export const HowTradingWorks = () => {
           <ul className="howTradingWorks__stepList">
             <li className="howTradingWorks__stepItem">
               <div className="howTradingWorks__stepItem__avatarBg">
-                <div className="howTradingWorks__stepItem__tradeActions">
+                <div className="tradeActions__nonInteractive">
                   <div>
                     <WhatsAppIcon />
                     <span>Trade on Whatsapp</span>
@@ -73,7 +73,7 @@ export const HowTradingWorks = () => {
             </li>
             <li className="howTradingWorks__stepItem">
               <div className="howTradingWorks__stepItem__avatarBg">
-                <div className="howTradingWorks__stepItem__rateConfirmedAvatar">
+                <div className="rateConfirmed__illustration">
                   <div className="successCheck__redBg">
                     <CheckMarkIcon color="#FFFFFF" />
                   </div>
@@ -99,7 +99,7 @@ export const HowTradingWorks = () => {
             </li>
             <li className="howTradingWorks__stepItem">
               <div className="howTradingWorks__stepItem__avatarBg">
-                <div className="howTradingWorks__stepItem__payoutAvatar">
+                <div className="payout__illustration">
                   <NairaSignIllustration />
                   <div>
                     <CheckMarkIcon color="#FF3155" />

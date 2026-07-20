@@ -1,0 +1,67 @@
+@use "../abstract/function" as *;
+
+.stepCard {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+}
+
+.stepCard__writeUp {
+  display: flex;
+  flex-direction: column;
+  gap: rem(13);
+  & > p {
+    font-size: rem(14);
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+
+    & > p:first-of-type {
+      font-weight: 500;
+    }
+
+    & > p:last-of-type {
+      font-size: rem(14);
+      color: var(--text-secondary-color-v2);
+    }
+  }
+}
+
+.stepCard__avatarBg {
+  background-color: var(--bg-color-grey-2);
+  border-radius: rem(24);
+  overflow: hidden;
+  height: rem(174);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.stepCard__avatarBg__imgBlock {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: rem(26);
+
+  & > img {
+    max-width: rem(322);
+    height: 100%;
+    border-radius: rem(9.4);
+  }
+}
+
+.stepCard__avatar__wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  & > img {
+    width: rem(247);
+    height: 100%;
+  }
+}

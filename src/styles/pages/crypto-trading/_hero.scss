@@ -1,0 +1,76 @@
+@use "../../abstract/function" as *;
+
+.cryptoTrading__hero {
+  padding-block-start: rem(203);
+  padding-block-end: rem(25);
+  height: rem(950);
+  //   max-height: 100vh;
+}
+
+.cryptoTrading__heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.cryptoTrading__heroWriteUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: rem(-26);
+    background-color: var(--primary-red-color);
+    border-radius: 999px;
+    width: rem(43);
+    height: 6px;
+  }
+
+  & > h2 {
+    font-size: rem(48);
+    letter-spacing: -3.5px;
+    line-height: rem(58);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & > p {
+    margin-block-start: rem(20);
+    max-width: rem(480);
+    color: var(--text-primary-grey-color);
+    font-weight: 400;
+  }
+}
+.cryptoHero__imgBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: rem(-32);
+  right: 0;
+  bottom: rem(-418);
+  z-index: 1;
+  & > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.cryptoTrading__hero__coinGroup {
+  margin-block-start: auto;
+}
+
+.cryptoTradingHero__ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: rem(32);
+  gap: rem(12);
+}

@@ -1,5 +1,21 @@
+import {
+  CryptoTradingHero,
+  CryptoTradingBanner,
+  CryptoTradingSupportedAssets,
+  CryptoTradingHowToSell,
+  WhySellWithUbycohub,
+} from "@/components";
+
 const CryptoTrading = () => {
-  return <h1>Crypto Trading</h1>;
+  return (
+    <div className="cryptoTrading__mainBlock">
+      <CryptoTradingHero />
+      <CryptoTradingBanner />
+      <CryptoTradingSupportedAssets />
+      <CryptoTradingHowToSell />
+      <WhySellWithUbycohub />
+    </div>
+  );
 };
 
 export default CryptoTrading;

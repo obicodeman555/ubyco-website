@@ -1,0 +1,64 @@
+@use "../../abstract/function" as *;
+
+.cryptoTrading__howToSell {
+  padding-block: rem(100);
+  background-color: var(--bg-color-grey);
+}
+
+.cryptoTrading__howToSell__p {
+  color: var(--text-secondary-color-v2);
+}
+
+.cryptoTrading__howToSell__stepsBlock {
+  margin-block-start: rem(63);
+}
+
+.cryptoTrading__howToSell__stepList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: rem(20);
+  grid-template-areas:
+    "chat chat details details rate rate"
+    "sendCrypto sendCrypto sendCrypto payout payout payout";
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "chat details"
+      "rate rate"
+      "send-crypto payout";
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "chat"
+      "details"
+      "rate"
+      "sendCrypto"
+      "payout";
+  }
+
+  & > .cryptoTrading__howToSell__stepItem:nth-child(1) {
+    grid-area: chat;
+  }
+  & > .cryptoTrading__howToSell__stepItem:nth-child(2) {
+    grid-area: details;
+  }
+  & > .cryptoTrading__howToSell__stepItem:nth-child(3) {
+    grid-area: rate;
+  }
+  & > .cryptoTrading__howToSell__stepItem:nth-child(4) {
+    grid-area: sendCrypto;
+  }
+  & > .cryptoTrading__howToSell__stepItem:nth-child(5) {
+    grid-area: payout;
+  }
+}
+
+.cryptoTrading__howToSell__stepItem:nth-child(1),
+.cryptoTrading__howToSell__stepItem:nth-child(2),
+.cryptoTrading__howToSell__stepItem:nth-child(2) {
+  & > .stepCard__writeUp {
+    padding-block-end: rem(42);
+  }
+}
