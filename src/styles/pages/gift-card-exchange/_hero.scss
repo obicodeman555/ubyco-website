@@ -1,0 +1,44 @@
+@use "../../abstract/function" as *;
+
+.gcex__mainBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+}
+
+.gcexHero {
+  padding-block-start: rem(203);
+  padding-block-end: rem(76);
+  min-height: 94vh;
+  background-color: rgba(#eee, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gcexHero__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: auto;
+  gap: rem(8);
+  & > span {
+    font-size: rem(12);
+    line-height: rem(18);
+    text-transform: uppercase;
+    color: var(--text-primary-grey-color);
+  }
+}
+
+.gcexHero__cardLogo {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, rem(280));
+  aspect-ratio: 286/111;
+
+  & > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

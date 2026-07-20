@@ -22,11 +22,11 @@ export const Header = () => {
       linkName: "gift card exchange",
     },
     {
-      url: "/business",
+      url: "",
       linkName: "for business",
     },
     {
-      url: "/faqs",
+      url: "",
       linkName: "FAQs",
     },
   ];
@@ -46,7 +46,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="ubycoHeader__navRightItems">
-          <NavLink href="/contact-us">contact us</NavLink>
+          <NavLink href="">contact us</NavLink>
 
           <div className="ubycoHeader__dropDownBlock">
             <button

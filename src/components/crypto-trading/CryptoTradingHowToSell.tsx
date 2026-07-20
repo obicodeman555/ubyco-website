@@ -10,14 +10,18 @@ import {
 import Image from "next/image";
 
 import ubycohubTelegramTradeImgSrc from "@/assets/images/ubycohub-telegram-chat-shot.png";
-import cryptoVerifiedImgSrc from "@/assets/images/crypto-verified-wallet-shot.png";
 
-export const CryptoTradingHowToSell = () => {
+export const CryptoTradingHowToSell = ({
+  avatar = "/svgs/crypto-trade-verfication-ubycohub.svg",
+  title = "How to Sell Crypto",
+  stepTitle = "Send Crypto",
+  stepDescription = "Send crypto only to the official wallet details provided by the trading desk.",
+}) => {
   return (
     <div className="cryptoTrading__howToSell">
       <div className="container">
         <div className="section-intro">
-          <h2 className="heading-2">How to Sell Crypto</h2>
+          <h2 className="heading-2">{title}</h2>
           <p
             className="cryptoTrading__howToSell__p"
             style={{ "--section-intro-p-maxWidth": "420px" } as CSSProperties}
@@ -101,17 +105,14 @@ export const CryptoTradingHowToSell = () => {
             <li className="cryptoTrading__howToSell__stepItem stepCard">
               <div className="stepCard__avatarBg">
                 <div className="stepCard__avatar__wallet">
-                  <Image src={cryptoVerifiedImgSrc} alt="" />
+                  <Image src={avatar} alt="" width={119} height={88} />
                 </div>
               </div>
               <div className="stepCard__writeUp">
                 <p className="textColor__red uppercase fw-500">step 04</p>
                 <div>
-                  <p>Send Crypto</p>
-                  <p>
-                    Send crypto only to the official wallet details provided by
-                    the trading desk.
-                  </p>
+                  <p>{stepTitle}</p>
+                  <p>{stepDescription}</p>
                 </div>
               </div>
             </li>

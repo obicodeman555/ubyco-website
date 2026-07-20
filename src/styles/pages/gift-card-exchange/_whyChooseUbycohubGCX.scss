@@ -1,0 +1,64 @@
+@use "../../abstract/function" as *;
+.wgyChooseUs__giftCardSection__modifierList.whyChooseUs__list {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  gap: 60px;
+  justify-content: center;
+
+  > :nth-child(-n + 3) {
+    grid-column: span 2;
+  }
+
+  > :nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  > :nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+
+  // Tablet
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 40px;
+
+    > * {
+      grid-column: auto !important;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    > * {
+      width: 100%;
+      max-width: 320px;
+      margin-inline: auto;
+    }
+  }
+
+  & > .whyChooseUs__listItem {
+    align-items: center;
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(8);
+      text-align: center;
+    }
+  }
+}
+
+.wgyChooseUs__giftCardSection__safteNote__modifier.safetyNote__contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin-block-start: rem(56);
+
+  & > .safetyNote__text {
+    max-width: rem(670);
+  }
+}

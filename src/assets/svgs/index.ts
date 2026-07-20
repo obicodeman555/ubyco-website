@@ -14,3 +14,4 @@ export { MinusIcon } from "./MinusIcon";
 export { HeartIcon } from "./HeartIcon";
 export { SpeedoMeterIcon } from "./Speedometer";
 export { SecurityLockIcon } from "./Lock";
+export * from "./MessageIcon";

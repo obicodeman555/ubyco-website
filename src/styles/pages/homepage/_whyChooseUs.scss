@@ -12,9 +12,19 @@
 
 .whyChooseUs__list {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
+
   gap: rem(60);
   margin-top: rem(56);
+
+  @media (max-width: 930px) {
+    grid-template-columns: repeat(2, rem(375));
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: rem(250);
+  }
 }
 
 .whyChooseUs__listItem__icon {
