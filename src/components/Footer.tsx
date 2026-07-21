@@ -7,8 +7,21 @@ import footerBottomImage from "@/assets/images/hand-holding-device-to-trade.png"
 import Link from "next/link";
 import footerDottedBg from "@/assets/images/footer-bg-patern.png";
 import { Logo, LogoV2 } from "./Logo";
+import {
+  trackLead,
+  trackTelegramClick,
+  trackWhatsappClick,
+} from "@/utils/analytics";
 
 export const Footer = () => {
+  const handleWhatsAppClick = () => {
+    trackWhatsappClick();
+    trackLead();
+  };
+  const handleTelegramClick = () => {
+    trackTelegramClick();
+    trackLead();
+  };
   return (
     <footer className="ubycohubFooter">
       <div className="ubycohubFooter__dottedBg">
@@ -43,10 +56,18 @@ export const Footer = () => {
               </p>
             </div>
             <div className="ubycohubFooter__cta__buttons">
-              <button type="button" className="btn-white">
+              <button
+                type="button"
+                className="btn-white"
+                onClick={handleWhatsAppClick}
+              >
                 Trade on WhatsApp
               </button>
-              <button type="button" className="btn-black">
+              <button
+                type="button"
+                className="btn-black"
+                onClick={handleTelegramClick}
+              >
                 Trade on Telegram
               </button>
             </div>

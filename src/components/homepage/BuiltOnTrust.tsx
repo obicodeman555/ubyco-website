@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export const BuiltOnTrust = () => {
+export const BuiltOnTrust = ({
+  handleWhatsAppClick,
+  handleTelegramClick,
+}: {
+  handleTelegramClick: () => void;
+  handleWhatsAppClick: () => void;
+}) => {
   return (
     <section className="sectionBlock">
       <div className="container">
@@ -70,10 +76,18 @@ export const BuiltOnTrust = () => {
               website.
             </div>
             <div className="safetyNote__ctas">
-              <button type="button" className="btn-primary">
+              <button
+                type="button"
+                className="btn-primary"
+                onClick={handleWhatsAppClick}
+              >
                 Trade on WhatsApp
               </button>
-              <button type="button" className="btn-black">
+              <button
+                type="button"
+                className="btn-black"
+                onClick={handleTelegramClick}
+              >
                 Trade on Telegram
               </button>
             </div>

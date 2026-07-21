@@ -10,6 +10,11 @@ import {
   WhatsAppIcon,
 } from "@/assets/svgs";
 import { NavLink } from "./NavLink";
+import {
+  trackLead,
+  trackTelegramClick,
+  trackWhatsappClick,
+} from "@/utils/analytics";
 
 export const Header = () => {
   const [isToggleTradeNow, setIsToggleTradeNow] = useState(false);
@@ -45,6 +50,23 @@ export const Header = () => {
   const handleCloseMobileMenu = () => {
     setIsToggleMobileNav(false);
   };
+
+  const handleTrade = (platform: "whatsapp" | "telegram") => {
+    trackLead();
+
+    if (platform === "whatsapp") {
+      trackWhatsappClick();
+
+      window.open("", "_blank", "noopener,noreferrer");
+    } else {
+      trackTelegramClick("Header");
+
+      window.open("", "_blank", "noopener,noreferrer");
+    }
+
+    setIsToggleMobileNav(false);
+  };
+
   return (
     <header className="ubycoHeader">
       <Link href="/" className="ubycoHeader__homeLink">
@@ -77,13 +99,13 @@ export const Header = () => {
             >
               <ul className="tradeOptions__list">
                 <li>
-                  <button>
+                  <button type="button" onClick={() => handleTrade("whatsapp")}>
                     <WhatsAppIcon />
                     <span>Trade on WhatsApp</span>
                   </button>
                 </li>
                 <li>
-                  <button>
+                  <button type="button" onClick={() => handleTrade("telegram")}>
                     <TelegramIcon />
                     <span>Trade on Telegram</span>
                   </button>
@@ -119,14 +141,14 @@ export const Header = () => {
             <button
               type="button"
               className="btn-primary"
-              onClick={handleCloseMobileMenu}
+              onClick={() => handleTrade("whatsapp")}
             >
               Trade on WhatsApp
             </button>
             <button
               type="button"
               className="btn-black"
-              onClick={handleCloseMobileMenu}
+              onClick={() => handleTrade("telegram")}
             >
               Trade on Telegram
             </button>

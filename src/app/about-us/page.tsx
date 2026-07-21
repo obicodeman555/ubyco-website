@@ -1,3 +1,5 @@
+"use client";
+
 import {
   WhatWeStandFor,
   WhyWeAreChatBased,
@@ -5,8 +7,15 @@ import {
   AboutUsHero,
   AboutUsBanner,
 } from "@/components/about-us";
+import { trackViewContent } from "@/utils/analytics";
+
+import { useEffect } from "react";
 
 const AboutUs = () => {
+  useEffect(() => {
+    trackViewContent("About Us");
+  }, []);
+
   return (
     <div className="aboutUs__mainBlock">
       <AboutUsHero />

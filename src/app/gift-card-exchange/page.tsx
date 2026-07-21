@@ -1,3 +1,5 @@
+"use client";
+
 import { CryptoTradingHowToSell } from "@/components";
 import {
   GcexHero,
@@ -5,8 +7,14 @@ import {
   GiftCardWeSupport,
   WhyUseUbycohubForGiftCards,
 } from "@/components/gift-card-exchange";
+import { trackViewContent } from "@/utils/analytics";
+
+import { useEffect } from "react";
 
 const GiftCardExchange = () => {
+  useEffect(() => {
+    trackViewContent("Gift Card Exchange");
+  }, []);
   return (
     <div className="gcex__mainBlock">
       <GcexHero />

@@ -34,6 +34,19 @@ export const trackWhatsappClick = () => {
 };
 
 /**
+ *
+ * Telegram Click
+ */
+export const trackTelegramClick = (location?: string) => {
+  window.gtag?.("event", "telegram_click", {
+    location,
+  });
+
+  window.fbq?.("trackCustom", "TelegramClick", {
+    location,
+  });
+};
+/**
  * Lead
  */
 export const trackLead = () => {

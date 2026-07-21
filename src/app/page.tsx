@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BuiltOnTrust,
   FAQs,
@@ -8,8 +10,27 @@ import {
   TradeWithConfidence,
   WhyChooseUbycohub,
 } from "@/components";
+import {
+  trackLead,
+  trackTelegramClick,
+  trackViewContent,
+  trackWhatsappClick,
+} from "@/utils/analytics";
+import { useEffect } from "react";
 
 export default function Home() {
+  const handleWhatsAppClick = () => {
+    trackWhatsappClick();
+    trackLead();
+  };
+  const handleTelegramClick = () => {
+    trackTelegramClick("Home page");
+    trackLead();
+  };
+
+  useEffect(() => {
+    trackViewContent("Homepage");
+  }, []);
   return (
     <main className="ubycohub__landingContents">
       <LandingHero />
@@ -18,7 +39,10 @@ export default function Home() {
       <HowTradingWorks />
       <SupportedCryptoAssets />
       <PopularGCSupport />
-      <BuiltOnTrust />
+      <BuiltOnTrust
+        handleTelegramClick={handleTelegramClick}
+        handleWhatsAppClick={handleWhatsAppClick}
+      />
       <FAQs />
     </main>
   );
