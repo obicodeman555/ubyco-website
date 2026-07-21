@@ -2,7 +2,13 @@ import Image from "next/image";
 import smilingToPhone from "@/assets/images/man-looking-at-his-phone.png";
 import { CheckMarkIcon, CurvedDottedArrow } from "@/assets/svgs";
 
-export const AboutUsHero = () => {
+export const AboutUsHero = ({
+  handleWhatsAppClick,
+  handleTelegramClick,
+}: {
+  handleTelegramClick: () => void;
+  handleWhatsAppClick: () => void;
+}) => {
   return (
     <div className="aboutUs__hero">
       <div className="container">
@@ -15,8 +21,12 @@ export const AboutUsHero = () => {
               <strong>fast naira payouts</strong>.
             </h2>
             <div className="aboutUs__hero__cta">
-              <button className="btn-primary">Trade on WhatsApp</button>
-              <button className="btn-black">Trade on Telegram</button>
+              <button className="btn-primary" onClick={handleWhatsAppClick}>
+                Trade on WhatsApp
+              </button>
+              <button className="btn-black" onClick={handleTelegramClick}>
+                Trade on Telegram
+              </button>
             </div>
           </div>
           <div className="aboutUs__heroImage">

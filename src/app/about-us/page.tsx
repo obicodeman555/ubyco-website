@@ -7,18 +7,35 @@ import {
   AboutUsHero,
   AboutUsBanner,
 } from "@/components/about-us";
-import { trackViewContent } from "@/utils/analytics";
+import {
+  trackLead,
+  trackTelegramClick,
+  trackViewContent,
+  trackWhatsappClick,
+} from "@/utils/analytics";
 
 import { useEffect } from "react";
 
 const AboutUs = () => {
+  const handleWhatsAppClick = () => {
+    trackWhatsappClick("About Us");
+    trackLead();
+  };
+  const handleTelegramClick = () => {
+    trackTelegramClick("About Us");
+    trackLead();
+  };
+
   useEffect(() => {
     trackViewContent("About Us");
   }, []);
 
   return (
     <div className="aboutUs__mainBlock">
-      <AboutUsHero />
+      <AboutUsHero
+        handleWhatsAppClick={handleWhatsAppClick}
+        handleTelegramClick={handleTelegramClick}
+      />
       {/*** Mission Section */}
       <OurMission />
 
