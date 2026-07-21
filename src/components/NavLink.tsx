@@ -8,14 +8,19 @@ import { type ReactNode } from "react";
 interface INavLinkProps {
   href: string;
   children: ReactNode;
+  onClick?: () => void;
 }
-export const NavLink = ({ href, children }: INavLinkProps) => {
+export const NavLink = ({ href, children, onClick }: INavLinkProps) => {
   const pathname = usePathname();
 
   const active = isActiveRoute(pathname, href);
 
   return (
-    <Link href={href} className={active ? "activeNavLink" : ""}>
+    <Link
+      href={href}
+      className={active ? "activeNavLink" : ""}
+      onClick={onClick}
+    >
       {children}
     </Link>
   );

@@ -2,11 +2,18 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { ArrowDownIcon, TelegramIcon, WhatsAppIcon } from "@/assets/svgs";
+import {
+  ArrowDownIcon,
+  CloseIcon,
+  MenuLine,
+  TelegramIcon,
+  WhatsAppIcon,
+} from "@/assets/svgs";
 import { NavLink } from "./NavLink";
 
 export const Header = () => {
   const [isToggleTradeNow, setIsToggleTradeNow] = useState(false);
+  const [isToggleMobileNav, setIsToggleMobileNav] = useState(false);
 
   const navList = [
     {
@@ -30,21 +37,28 @@ export const Header = () => {
       linkName: "FAQs",
     },
   ];
+
+  const handleShowMobileNav = () => {
+    setIsToggleMobileNav((prev) => !prev);
+  };
+
+  const handleCloseMobileMenu = () => {
+    setIsToggleMobileNav(false);
+  };
   return (
     <header className="ubycoHeader">
-      <div className="ubycoHeader__innerContainer container">
-        <nav className="ubycoHeader__navs">
-          <Link href="/" className="ubycoHeader__homeLink">
-            <Logo />
-          </Link>
-          <ul className="ubycoHeader__navList">
-            {navList.map((item, index) => (
-              <li key={index}>
-                <NavLink href={item.url}>{item.linkName}</NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <Link href="/" className="ubycoHeader__homeLink">
+        <Logo />
+      </Link>
+      <nav className="ubycoHeader__navs">
+        <ul className="ubycoHeader__navList">
+          {navList.map((item, index) => (
+            <li key={index}>
+              <NavLink href={item.url}>{item.linkName}</NavLink>
+            </li>
+          ))}
+        </ul>
+
         <div className="ubycoHeader__navRightItems">
           <NavLink href="">contact us</NavLink>
 
@@ -78,6 +92,46 @@ export const Header = () => {
             </div>
           </div>
         </div>
+      </nav>
+
+      <div className="ubycoHeader__mobileMenu">
+        <button type="button" onClick={handleShowMobileNav}>
+          {isToggleMobileNav ? <CloseIcon /> : <MenuLine />}
+        </button>
+        <nav
+          className={`ubycoHeader__mobileNav ${isToggleMobileNav ? "isOpen" : ""}`}
+        >
+          <ul className="ubycoHeader__mobile__navList">
+            <li>
+              <NavLink href={"/"} onClick={handleCloseMobileMenu}>
+                Home
+              </NavLink>
+            </li>
+            {navList.map((item, index) => (
+              <li key={index}>
+                <NavLink href={item.url} onClick={handleCloseMobileMenu}>
+                  {item.linkName}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+          <div className="ubycoHeader__mobileNav__ctas">
+            <button
+              type="button"
+              className="btn-primary"
+              onClick={handleCloseMobileMenu}
+            >
+              Trade on WhatsApp
+            </button>
+            <button
+              type="button"
+              className="btn-black"
+              onClick={handleCloseMobileMenu}
+            >
+              Trade on Telegram
+            </button>
+          </div>
+        </nav>
       </div>
     </header>
   );
