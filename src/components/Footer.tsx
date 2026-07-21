@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { LinkedInIcon, XIcon, InstagramIcon, TikTok } from "@/assets/svgs";
 import heroFooterImage1 from "@/assets/images/circled-frame-man-illustrator.png";

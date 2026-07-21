@@ -27,10 +27,14 @@ export const trackViewContent = (page: string) => {
 /**
  * WhatsApp Click
  */
-export const trackWhatsappClick = () => {
-  window.gtag?.("event", "whatsapp_click");
+export const trackWhatsappClick = (location?: string) => {
+  window.gtag?.("event", "whatsapp_click", {
+    location,
+  });
 
-  window.fbq?.("trackCustom", "WhatsAppClick");
+  window.fbq?.("trackCustom", "WhatsAppClick", {
+    location,
+  });
 };
 
 /**

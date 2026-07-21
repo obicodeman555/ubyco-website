@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    trackViewContent("Homepage");
+    trackViewContent("Home page");
   }, []);
   return (
     <main className="ubycohub__landingContents">
