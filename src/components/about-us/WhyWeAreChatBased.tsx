@@ -22,7 +22,7 @@ export const WhyWeAreChatBased = () => {
             <p>
               Through WhatsApp and Telegram, customers can ask questions,
               confirm rates, receive instructions, and complete trades with real
-              humanassistance.
+              human assistance.
             </p>
             <Link href="" className="btn-primary">
               Contact Us

@@ -33,6 +33,8 @@ export const AboutUsHero = ({
             <Image
               src={smilingToPhone}
               alt="This represent a customer smiling due to his satisfaction with ubycohub trade"
+              width={298}
+              height={404}
             />
             <div className="nonInteractive__pill">
               <CheckMarkIcon color="#22C55E" />

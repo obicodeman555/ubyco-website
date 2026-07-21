@@ -43,6 +43,11 @@ select {
 p {
   text-wrap: pretty;
   overflow-wrap: break-word;
+
+  @media (max-width: 768px) {
+    text-wrap: unset;
+    overflow-wrap: unset;
+  }
 }
 
 h1,
