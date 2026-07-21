@@ -21,7 +21,6 @@ export const LandingHero = () => {
             <div>Fast, Secure Crypto & Gift Card</div>
             <div>
               <span>Trading Through</span>
-
               <span>
                 <Image
                   src="/svgs/ubycohub-whatsapp-enhanced-icon.svg"

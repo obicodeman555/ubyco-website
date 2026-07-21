@@ -101,7 +101,7 @@ export const GiftCardWeSupport = () => {
                   confirm the current rate before trading.
                 </span>
                 <button type="button" className="btn-primary">
-                  Ask for Crypto Rate
+                  Check Gift Card Rate
                 </button>
               </div>
             </div>

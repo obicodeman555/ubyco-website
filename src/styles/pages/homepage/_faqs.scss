@@ -1,8 +1,12 @@
 @use "../../abstract/function" as *;
 
-.faqContent__mainBlock {
+.faqContent__mainBlock__modifier {
   position: relative;
   background-color: #fff;
+
+  &.sectionBlock {
+    padding-block-start: rem(20);
+  }
 }
 
 .faqContent__container {
@@ -84,6 +88,10 @@
   justify-content: center;
   width: rem(70);
   height: rem(70);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   &::before {
     content: "";

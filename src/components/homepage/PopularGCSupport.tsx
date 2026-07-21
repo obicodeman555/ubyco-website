@@ -93,12 +93,12 @@ export const PopularGCSupport = () => {
             </ul>
             <div className="sca__contentWriteUp">
               <span>
-                <span className="textColor__red">Note:</span> Note: Gift card
+                <span className="textColor__red">Note:</span> Gift card
                 availability and rates may vary. Contact the trading desk to
                 confirm the current rate before trading.
               </span>
               <button type="button" className="btn-primary">
-                Ask for Crypto Rate
+                Check Gift Card Rate
               </button>
             </div>
           </div>

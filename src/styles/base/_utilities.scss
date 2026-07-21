@@ -20,6 +20,12 @@
   text-wrap: wrap;
   line-height: 40px;
   letter-spacing: -2px;
+
+  @media (max-width: 768px) {
+    font-size: rem(20);
+    line-height: rem(24);
+    letter-spacing: -1px;
+  }
 }
 
 .heading-3 {
@@ -27,6 +33,12 @@
   font-weight: 600;
   line-height: rem(24);
   color: var(--secondary-black-color-v2);
+
+  @media (max-width: 768px) {
+    font-size: rem(18);
+    font-weight: 500;
+    line-height: rem(27);
+  }
 }
 
 .heading-4 {
@@ -34,11 +46,20 @@
   font-weight: 500;
   line-height: rem(27);
   letter-spacing: -1px;
+
+  @media (max-width: 768px) {
+    font-size: rem(16);
+    line-height: rem(24);
+    letter-spacing: -0.5px;
+  }
 }
 
 .text-muted,
 .text-muted-v2 {
   font-weight: 400;
+  @media (max-width: 768px) {
+    font-size: rem(14);
+  }
 }
 
 .text-muted {
@@ -73,6 +94,10 @@
     font-weight: 400;
     line-height: rem(24);
     max-width: var(--section-intro-p-maxWidth, none);
+
+    @media (max-width: 768px) {
+      max-width: rem(360);
+    }
   }
 }
 

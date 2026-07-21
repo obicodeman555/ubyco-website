@@ -85,7 +85,7 @@ export const FAQs = () => {
   }, []);
 
   return (
-    <section className="sectionBlock faqContent__mainBlock">
+    <section className="faqContent__mainBlock__modifier sectionBlock">
       <div className="container">
         <div className="faqContent__container">
           <h2 className="heading-2">Frequently Asked Questions</h2>

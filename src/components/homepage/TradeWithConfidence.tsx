@@ -21,7 +21,7 @@ export const TradeWithConfidence = () => {
               src="/svgs/ubycohub-crypto-asset-group.svg"
               alt=""
               width={220}
-              height={60}
+              height={50}
             />
             <div>
               <div>

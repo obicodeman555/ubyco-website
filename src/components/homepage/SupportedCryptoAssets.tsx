@@ -19,6 +19,8 @@ export const SupportedCryptoAssets = () => {
             desk.
           </p>
         </div>
+      </div>
+      <div className="container">
         <article className="sca__contentBlock">
           <div className="sca__contentAvatar">
             <Image
@@ -39,10 +41,17 @@ export const SupportedCryptoAssets = () => {
             </button>
           </div>
         </article>
+      </div>
 
+      <div className="container">
         <div className="sca__bottomContent">
           <div className="sca__bottomContent__imgContainer">
-            <Image src={smilingMan} alt="This reprsents a happy customer" />
+            <Image
+              src={smilingMan}
+              alt="This reprsents a happy customer"
+              width={507}
+              height={584}
+            />
           </div>
           <div className="sca__bottomContent__leftItem">
             <div className="dotBg__container">

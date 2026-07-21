@@ -2,6 +2,16 @@
 
 .sca__mainBlock {
   padding-block: rem(124);
+
+  @media (max-width: 768px) {
+    padding-block: rem(104);
+  }
+
+  & > .container:nth-child(3) {
+    @media (max-width: 768px) {
+      padding-inline: 0;
+    }
+  }
 }
 
 .sca__contentBlock {
@@ -16,10 +26,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   & > img {
     width: 100%;
     height: auto;
     object-fit: contain;
+
+    @media (max-width: 768px) {
+      object-fit: cover;
+      height: rem(240);
+    }
   }
 }
 
@@ -32,10 +48,14 @@
   gap: rem(24);
 
   & > span {
-    font-size: 14px;
+    font-size: rem(14);
     font-weight: 400;
-    max-width: 380px;
+    max-width: rem(380);
     color: var(--text-primary-grey-color);
+
+    @media (max-width: 768px) {
+      max-width: rem(320);
+    }
 
     & > span:nth-child(1) {
       font-weight: 500;
@@ -46,21 +66,35 @@
 //bottom content
 .sca__bottomContent {
   display: grid;
-  // grid-template-columns: 1.5fr 2fr;
   grid-template-columns: minmax(300px, 1.5fr) minmax(450px, 2fr);
-  grid-template-rows: rem(584);
-  gap: 12px;
+  grid-template-areas: "image content";
+  gap: rem(12);
   padding-block-start: rem(100);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    grid-template-areas:
+      "content"
+      "image";
+  }
 }
 
 .sca__bottomContent__imgContainer,
 .sca__bottomContent__leftItem {
   overflow: hidden;
   border-radius: rem(32);
+  @media (max-width: 768px) {
+    border-radius: 0;
+  }
 }
 
 .sca__bottomContent__imgContainer {
-  display: flex;
+  grid-area: image;
+
+  @media (max-width: 768px) {
+    height: rem(366);
+  }
 
   & > img {
     width: 100%;
@@ -70,6 +104,7 @@
 }
 
 .sca__bottomContent__leftItem {
+  grid-area: content;
   position: relative;
   background-color: #111827;
 }
@@ -89,6 +124,10 @@
   padding: rem(44);
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    padding-inline: rem(22);
+  }
 }
 
 .sca__bottomContent__writeUp__heading {
@@ -133,6 +172,10 @@
   align-items: center;
   justify-content: center;
   gap: rem(16);
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
   & > li {
     display: flex;
     align-items: center;
@@ -143,6 +186,7 @@
     & > span {
       font-size: rem(12);
       color: var(--text-primary-grey-color);
+      font-weight: 500;
     }
   }
 }
