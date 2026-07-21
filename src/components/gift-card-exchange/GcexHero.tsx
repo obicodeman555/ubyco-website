@@ -5,12 +5,13 @@ import {
   trackWhatsappClick,
 } from "@/utils/analytics";
 import Image from "next/image";
+import { useCallback } from "react";
 
 export const GcexHero = () => {
   const WHATSAPP_URL = "";
   const TELEGRAM_URL = "";
 
-  const handleTrade = (platform: "whatsapp" | "telegram") => {
+  const handleTrade = useCallback((platform: "whatsapp" | "telegram") => {
     trackLead();
 
     if (platform === "whatsapp") {
@@ -22,7 +23,7 @@ export const GcexHero = () => {
 
       window.open(TELEGRAM_URL, "_blank", "noopener,noreferrer");
     }
-  };
+  }, []);
 
   return (
     <div className="gcexHero">

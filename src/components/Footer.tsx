@@ -16,11 +16,11 @@ import {
 
 export const Footer = () => {
   const handleWhatsAppClick = () => {
-    trackWhatsappClick();
+    trackWhatsappClick("Footer");
     trackLead();
   };
   const handleTelegramClick = () => {
-    trackTelegramClick();
+    trackTelegramClick("Footer");
     trackLead();
   };
   return (

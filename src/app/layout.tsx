@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   },
 };
 
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,7 +48,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-BHPDP12PZV');
+            gtag('config', '${GA_ID}');
           `}
         </Script>
 
@@ -60,7 +63,7 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '3245146915875158');
+            fbq('init', '${META_PIXEL_ID}');
             fbq('track', 'PageView');
           `}
         </Script>

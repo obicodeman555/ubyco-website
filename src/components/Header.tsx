@@ -55,11 +55,11 @@ export const Header = () => {
     trackLead();
 
     if (platform === "whatsapp") {
-      trackWhatsappClick();
+      trackWhatsappClick("Ubycohub Header");
 
       window.open("", "_blank", "noopener,noreferrer");
     } else {
-      trackTelegramClick("Header");
+      trackTelegramClick("Ubycohub Header");
 
       window.open("", "_blank", "noopener,noreferrer");
     }

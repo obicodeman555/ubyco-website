@@ -20,7 +20,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   const handleWhatsAppClick = () => {
-    trackWhatsappClick();
+    trackWhatsappClick("Home page");
     trackLead();
   };
   const handleTelegramClick = () => {

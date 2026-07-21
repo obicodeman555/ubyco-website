@@ -1,4 +1,4 @@
-const GA_ID = "G-BHPDP12PZV";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 /**
  * Track every page navigation
@@ -27,7 +27,7 @@ export const trackViewContent = (page: string) => {
 /**
  * WhatsApp Click
  */
-export const trackWhatsappClick = (location?: string) => {
+export const trackWhatsappClick = (location: string) => {
   window.gtag?.("event", "whatsapp_click", {
     location,
   });
@@ -41,7 +41,7 @@ export const trackWhatsappClick = (location?: string) => {
  *
  * Telegram Click
  */
-export const trackTelegramClick = (location?: string) => {
+export const trackTelegramClick = (location: string) => {
   window.gtag?.("event", "telegram_click", {
     location,
   });
