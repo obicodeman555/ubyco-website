@@ -12,3 +12,16 @@ export const Logo = () => {
     </div>
   );
 };
+
+export const LogoV2 = () => {
+  return (
+    <div className="ubycohub__logo ubycohub__logo__icon">
+      <Image
+        src="/svgs/ubycohub-logo-2.svg"
+        alt="This is Ubycohub business logo"
+        width={57}
+        height={38}
+      />
+    </div>
+  );
+};

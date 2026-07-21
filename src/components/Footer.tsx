@@ -6,13 +6,13 @@ import heroFooterImage3 from "@/assets/images/circled-frame-dreadlocked-man.png"
 import footerBottomImage from "@/assets/images/hand-holding-device-to-trade.png";
 import Link from "next/link";
 import footerDottedBg from "@/assets/images/footer-bg-patern.png";
-import { Logo } from "./Logo";
+import { Logo, LogoV2 } from "./Logo";
 
 export const Footer = () => {
   return (
     <footer className="ubycohubFooter">
       <div className="ubycohubFooter__dottedBg">
-        <Image src={footerDottedBg} alt="" />
+        <Image src={footerDottedBg} alt="" width={1440} height={1328} />
       </div>
       <div className="ubycohubFooter__contentBlock">
         <div className="container">
@@ -56,7 +56,10 @@ export const Footer = () => {
         <nav className="ubycohubFooter__navigationBlock">
           <div className="ubycohubFooter__navigationItems">
             <div>
-              <Logo />
+              <div className="ubycohub__logoVariants">
+                <Logo />
+                <LogoV2 />
+              </div>
               <span>
                 Ubycohub is a trusted chat-based crypto and gift card trading
                 desk helping individuals and businesses trade securely with fast
@@ -69,11 +72,11 @@ export const Footer = () => {
                 quick link
               </div>
               <div>
-                <Link href={""}>Home</Link>
+                <Link href={"/"}>Home</Link>
 
-                <Link href={""}>Crypto Trading</Link>
+                <Link href={"/crypto-trading"}>Crypto Trading</Link>
 
-                <Link href={""}>Gift Card Exchange</Link>
+                <Link href={"/gift-card-exchange"}>Gift Card Exchange</Link>
 
                 <Link href={""}>For Business</Link>
 
@@ -85,7 +88,7 @@ export const Footer = () => {
                 company
               </div>
               <div>
-                <Link href={""}>About Us</Link>
+                <Link href={"/about-us"}>About Us</Link>
 
                 <Link href={""}>Privacy Policy</Link>
 
