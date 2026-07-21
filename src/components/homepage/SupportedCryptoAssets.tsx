@@ -2,11 +2,7 @@
 import Image from "next/image";
 import { type CSSProperties } from "react";
 import smilingMan from "@/assets/images/smiling-man.jpg";
-import {
-  ApexIcon,
-  CryptoAssetsIllustration,
-  DottedBackground,
-} from "@/assets/svgs";
+import { ApexIcon, DottedBackground } from "@/assets/svgs";
 import Link from "next/link";
 
 export const SupportedCryptoAssets = () => {
@@ -25,7 +21,12 @@ export const SupportedCryptoAssets = () => {
         </div>
         <article className="sca__contentBlock">
           <div className="sca__contentAvatar">
-            <CryptoAssetsIllustration />
+            <Image
+              src="/svgs/ubycohub-supported-crypto-assets.svg"
+              alt=""
+              width={1240}
+              height={360}
+            />
           </div>
           <div className="sca__contentWriteUp">
             <span>

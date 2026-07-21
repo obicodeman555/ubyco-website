@@ -1,8 +1,14 @@
 import Image from "next/image";
-import logoSrc from "@/assets/images/ubycohub-logo-1.png";
 
 export const Logo = () => {
   return (
-    <Image src={logoSrc} alt="This is Ubycohub business logo" width="130" />
+    <div className="ubycohub__logo">
+      <Image
+        src="/images/ubycohub-logo.png"
+        alt="This is Ubycohub business logo"
+        width={130}
+        height={32}
+      />
+    </div>
   );
 };

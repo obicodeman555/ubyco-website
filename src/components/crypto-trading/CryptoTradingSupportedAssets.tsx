@@ -1,5 +1,5 @@
 import { type CSSProperties } from "react";
-import { CryptoAssetsIllustration } from "@/assets/svgs";
+import Image from "next/image";
 
 export const CryptoTradingSupportedAssets = () => {
   return (
@@ -17,7 +17,12 @@ export const CryptoTradingSupportedAssets = () => {
         </div>
         <article className="sca__contentBlock">
           <div className="sca__contentAvatar">
-            <CryptoAssetsIllustration />
+            <Image
+              src="/svgs/ubycohub-supported-crypto-assets.svg"
+              alt=""
+              width={1240}
+              height={360}
+            />
           </div>
           <div className="sca__contentWriteUp">
             <span>

@@ -36,17 +36,18 @@
   }
 
   & > div:first-of-type {
-    right: rem(70);
-    top: rem(78);
+    left: rem(98);
+    top: rem(87);
   }
 
-  & > svg:first-of-type {
-    top: rem(35);
+  & > img {
+    top: rem(45);
     left: rem(67);
+    position: absolute;
   }
-  & > svg:last-of-type {
-    right: rem(64);
-    bottom: rem(52);
+  & > svg {
+    right: rem(77);
+    top: rem(106);
   }
 }
 
@@ -120,9 +121,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    & > svg {
+    & > img {
       width: rem(14);
       height: rem(14);
+      object-fit: contain;
     }
   }
 

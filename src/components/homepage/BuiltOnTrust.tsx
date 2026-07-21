@@ -1,4 +1,4 @@
-import { TradePlatformScreenShotV3 } from "@/assets/svgs";
+import Image from "next/image";
 
 export const BuiltOnTrust = () => {
   return (
@@ -53,7 +53,12 @@ export const BuiltOnTrust = () => {
             </div>
             <div className="bot__tradePlatfrom__imgBlock">
               <div>
-                <TradePlatformScreenShotV3 />
+                <Image
+                  src="/svgs/ubycohub-platform-trade-shot.svg"
+                  alt=""
+                  width={345}
+                  height={172}
+                />
               </div>
             </div>
           </div>

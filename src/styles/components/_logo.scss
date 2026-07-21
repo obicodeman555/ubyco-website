@@ -1,0 +1,12 @@
+@use "../abstract/function" as *;
+
+.ubycohub__logo {
+  display: flex;
+  flex-direction: column;
+  max-width: rem(130);
+  height: rem(19);
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}

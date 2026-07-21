@@ -1,16 +1,12 @@
 import {
   AmazonIcon,
   AppleIcon,
-  EbayIcon,
-  NikeIcon,
   PlayStoreIcon,
-  RaizerCode,
-  SephoraIcon,
   SteamIcon,
-  Vanilla,
   WalmartPayIcon,
 } from "@/assets/svgs";
 import { type CSSProperties } from "react";
+import Image from "next/image";
 
 export const GiftCardWeSupport = () => {
   return (
@@ -49,15 +45,30 @@ export const GiftCardWeSupport = () => {
                   <span>Google Play</span>
                 </li>
                 <li>
-                  <SephoraIcon />
+                  <Image
+                    src="/svgs/sephora-gift-card-icon.svg"
+                    alt=""
+                    width={32}
+                    height={32}
+                  />
                   <span>Sephora</span>
                 </li>
                 <li>
-                  <RaizerCode />
+                  <Image
+                    src="/svgs/raizer-gold-gift-card-icon.svg"
+                    alt=""
+                    width={32}
+                    height={32}
+                  />
                   <span>Razer Gold</span>
                 </li>
                 <li>
-                  <NikeIcon />
+                  <Image
+                    src="/svgs/nike-gift-card-icon.svg"
+                    alt=""
+                    width={43}
+                    height={32}
+                  />
                   <span>Nike</span>
                 </li>
                 <li>
@@ -65,11 +76,21 @@ export const GiftCardWeSupport = () => {
                   <span>Walmart</span>
                 </li>
                 <li>
-                  <EbayIcon />
+                  <Image
+                    src="/svgs/ebay-gift-card-icon.svg"
+                    alt=""
+                    width={47}
+                    height={31}
+                  />
                   <span>eBay</span>
                 </li>
                 <li>
-                  <Vanilla />
+                  <Image
+                    src="/svgs/vannila-gift-card-icon.svg"
+                    alt=""
+                    width={32}
+                    height={32}
+                  />
                   <span>Vanilla</span>
                 </li>
               </ul>

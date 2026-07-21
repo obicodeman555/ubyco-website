@@ -1,8 +1,4 @@
-import {
-  CryptoCoinGroup,
-  GiftCardGroup,
-  TradePlatformScreenShotV2,
-} from "@/assets/svgs";
+import Image from "next/image";
 
 export const TradeWithConfidence = () => {
   return (
@@ -21,7 +17,12 @@ export const TradeWithConfidence = () => {
         </div>
         <div className="twc__contentBlock">
           <div>
-            <CryptoCoinGroup />
+            <Image
+              src="/svgs/ubycohub-crypto-asset-group.svg"
+              alt=""
+              width={220}
+              height={60}
+            />
             <div>
               <div>
                 <h3 className="heading-3">Sell Crypto</h3>
@@ -35,7 +36,12 @@ export const TradeWithConfidence = () => {
             </div>
           </div>
           <div>
-            <GiftCardGroup />
+            <Image
+              src="/svgs/ubycohub-gift-cards-group.svg"
+              alt=""
+              width={236}
+              height={52}
+            />
             <div>
               <div>
                 <h3 className="heading-3">Sell Gift Cards</h3>
@@ -49,7 +55,12 @@ export const TradeWithConfidence = () => {
           </div>
           <div>
             <div>
-              <TradePlatformScreenShotV2 />
+              <Image
+                src="/svgs/ubycohub-platform-settlement-shot.svg"
+                alt=""
+                width={337}
+                height={225}
+              />
             </div>
             <div>
               <h3 className="heading-3">Business Trading</h3>

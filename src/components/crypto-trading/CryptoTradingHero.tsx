@@ -1,4 +1,3 @@
-import { CryptoCoinGroup } from "@/assets/svgs";
 import Image from "next/image";
 import cryptoTradingHeroImgSrc from "@/assets/images/hands-with-a-phone.png";
 
@@ -26,7 +25,12 @@ export const CryptoTradingHero = () => {
           </div>
         </div>
         <div className="cryptoTrading__hero__coinGroup">
-          <CryptoCoinGroup />
+          <Image
+            src="/svgs/ubycohub-crypto-asset-group.svg"
+            alt=""
+            width={220}
+            height={60}
+          />
         </div>
         <div className="cryptoHero__imgBlock">
           <Image src={cryptoTradingHeroImgSrc} alt="" />

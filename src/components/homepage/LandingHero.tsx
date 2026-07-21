@@ -1,19 +1,21 @@
-import Image from "next/image";
-import {
-  TelegramIconV2,
-  TradePlatformScreenShot,
-  WhatAppIconV2,
-} from "@/assets/svgs";
 import heroFooterImage1 from "@/assets/images/circled-frame-man-illustrator.png";
 import heroFooterImage2 from "@/assets/images/circled-frame-woman-illustration.png";
 import heroFooterImage3 from "@/assets/images/circled-frame-dreadlocked-man.png";
 import coinGroup from "@/assets/images/coin-group-img.png";
+import Image from "next/image";
 
 export const LandingHero = () => {
   return (
     <div className="ubycohub__landingHero">
       <div className="ubycohub__landingHero__inner container">
-        <TradePlatformScreenShot />
+        <div>
+          <Image
+            src="/svgs/ubycohub-platform-trade-shot.svg"
+            alt=""
+            width={345}
+            height={172}
+          />
+        </div>
         <article className="ubycohub__landingHero__writeUp">
           <div className="ubycohub__landingHero__largeText">
             <div>Fast, Secure Crypto & Gift Card</div>
@@ -21,8 +23,18 @@ export const LandingHero = () => {
               <span>Trading Through</span>
 
               <span>
-                <WhatAppIconV2 />
-                <TelegramIconV2 />
+                <Image
+                  src="/svgs/ubycohub-whatsapp-enhanced-icon.svg"
+                  alt=""
+                  width={44}
+                  height={44}
+                />
+                <Image
+                  src="/svgs/ubycohub-telegram-enhanced-icon.svg"
+                  alt=""
+                  width={44}
+                  height={44}
+                />
               </span>
               <span>WhatsApp</span>
             </div>

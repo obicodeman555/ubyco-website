@@ -1,17 +1,12 @@
 import Image from "next/image";
-import {
-  UbycohubLogoMark,
-  LinkedInIcon,
-  XIcon,
-  InstagramIcon,
-  TikTok,
-} from "@/assets/svgs";
+import { LinkedInIcon, XIcon, InstagramIcon, TikTok } from "@/assets/svgs";
 import heroFooterImage1 from "@/assets/images/circled-frame-man-illustrator.png";
 import heroFooterImage2 from "@/assets/images/circled-frame-woman-illustration.png";
 import heroFooterImage3 from "@/assets/images/circled-frame-dreadlocked-man.png";
 import footerBottomImage from "@/assets/images/hand-holding-device-to-trade.png";
 import Link from "next/link";
 import footerDottedBg from "@/assets/images/footer-bg-patern.png";
+import { Logo } from "./Logo";
 
 export const Footer = () => {
   return (
@@ -61,7 +56,7 @@ export const Footer = () => {
         <nav className="ubycohubFooter__navigationBlock">
           <div className="ubycohubFooter__navigationItems">
             <div>
-              <UbycohubLogoMark />
+              <Logo />
               <span>
                 Ubycohub is a trusted chat-based crypto and gift card trading
                 desk helping individuals and businesses trade securely with fast

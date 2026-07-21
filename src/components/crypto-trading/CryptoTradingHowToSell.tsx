@@ -1,8 +1,6 @@
 import { type CSSProperties } from "react";
 import {
   CheckMarkIcon,
-  HandShakeEmoji,
-  NairaSignIllustration,
   PointerCursorIcon,
   TelegramIcon,
   WhatsAppIcon,
@@ -10,6 +8,7 @@ import {
 import Image from "next/image";
 
 import ubycohubTelegramTradeImgSrc from "@/assets/images/ubycohub-telegram-chat-shot.png";
+import { NairaPayoutConfirmedAvatar } from "../NairaPayoutConfirmedAvatar";
 
 export const CryptoTradingHowToSell = ({
   avatar = "/svgs/crypto-trade-verfication-ubycohub.svg",
@@ -84,7 +83,12 @@ export const CryptoTradingHowToSell = ({
                   <div>
                     <div>
                       <span>Rate confirmed</span>
-                      <HandShakeEmoji />
+                      <Image
+                        src="/svgs/handshake-emoji.svg"
+                        alt=""
+                        width={13}
+                        height={13}
+                      />
                     </div>
                     <span>You will receive ₦1,375 per 1 USDT</span>
                   </div>
@@ -118,15 +122,7 @@ export const CryptoTradingHowToSell = ({
             </li>
             <li className="cryptoTrading__howToSell__stepItem stepCard">
               <div className="stepCard__avatarBg">
-                <div className="payout__illustration">
-                  <NairaSignIllustration />
-                  <div>
-                    <CheckMarkIcon color="#FF3155" />
-                    <span>Payout confirmed</span>
-                  </div>
-
-                  <PointerCursorIcon />
-                </div>
+                <NairaPayoutConfirmedAvatar />
               </div>
               <div className="howTradingWorks__stepItem__writeUp">
                 <p className="textColor__red uppercase fw-500">step 05</p>

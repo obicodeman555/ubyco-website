@@ -1,14 +1,13 @@
 import {
   CheckMarkIcon,
-  HandShakeEmoji,
-  NairaSignIllustration,
   PointerCursorIcon,
   TelegramIcon,
-  TelegramTradePlatformShot,
   WhatsAppIcon,
 } from "@/assets/svgs";
 
 import { type CSSProperties } from "react";
+import { NairaPayoutConfirmedAvatar } from "../NairaPayoutConfirmedAvatar";
+import Image from "next/image";
 
 export const HowTradingWorks = () => {
   return (
@@ -57,7 +56,12 @@ export const HowTradingWorks = () => {
             <li className="howTradingWorks__stepItem">
               <div className="howTradingWorks__stepItem__avatarBg">
                 <div className="howTradingWorks__telegramShot">
-                  <TelegramTradePlatformShot />
+                  <Image
+                    src="/svgs/ubycohub-telegram-trade-shot-sm.svg"
+                    alt=""
+                    width={250}
+                    height={209}
+                  />
                 </div>
               </div>
               <div className="howTradingWorks__stepItem__writeUp">
@@ -80,7 +84,12 @@ export const HowTradingWorks = () => {
                   <div>
                     <div>
                       <span>Rate confirmed</span>
-                      <HandShakeEmoji />
+                      <Image
+                        src="/svgs/handshake-emoji.svg"
+                        alt=""
+                        width={13}
+                        height={13}
+                      />
                     </div>
                     <span>You will receive ₦1,375 per 1 USDT</span>
                   </div>
@@ -99,15 +108,7 @@ export const HowTradingWorks = () => {
             </li>
             <li className="howTradingWorks__stepItem">
               <div className="howTradingWorks__stepItem__avatarBg">
-                <div className="payout__illustration">
-                  <NairaSignIllustration />
-                  <div>
-                    <CheckMarkIcon color="#FF3155" />
-                    <span>Payout confirmed</span>
-                  </div>
-
-                  <PointerCursorIcon />
-                </div>
+                <NairaPayoutConfirmedAvatar />
               </div>
               <div className="howTradingWorks__stepItem__writeUp">
                 <p className="textColor__red uppercase fw-500">step 04</p>
