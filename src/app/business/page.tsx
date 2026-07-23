@@ -1,8 +1,21 @@
 import { ForBusinessHero } from "@/components/for-business";
 import { SecurePaymentIcon } from "@/assets/svgs";
 import Image from "next/image";
+import {
+  trackLead,
+  trackTelegramClick,
+  trackWhatsappClick,
+} from "@/utils/analytics";
 
 const Business = () => {
+  const handleWhatsAppClick = () => {
+    trackWhatsappClick("For Business Page");
+    trackLead();
+  };
+  const handleTelegramClick = () => {
+    trackTelegramClick("For Business Page");
+    trackLead();
+  };
   return (
     <article className="articleBlock__main">
       <ForBusinessHero />
@@ -217,10 +230,18 @@ const Business = () => {
                 Ubycohub and get direct support for your business trading needs.
               </p>
               <div className="articleBlock__cta__items">
-                <button type="button" className="btn-primary">
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={handleWhatsAppClick}
+                >
                   Contact us on WhatsApp
                 </button>
-                <button type="button" className="btn-black">
+                <button
+                  type="button"
+                  className="btn-black"
+                  onClick={handleTelegramClick}
+                >
                   Contact us on Telegram
                 </button>
               </div>
