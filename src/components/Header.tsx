@@ -38,7 +38,7 @@ export const Header = () => {
       linkName: "for business",
     },
     {
-      url: "/faqs",
+      url: "",
       linkName: "FAQs",
     },
   ];
