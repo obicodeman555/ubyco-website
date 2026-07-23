@@ -1,3 +1,4 @@
+"use client";
 import { ForBusinessHero } from "@/components/for-business";
 import { SecurePaymentIcon } from "@/assets/svgs";
 import Image from "next/image";
