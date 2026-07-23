@@ -38,12 +38,22 @@ export const ForBusinessHero = () => {
           </div>
           <div className="heroContent__right">
             <div className="heroContent__image">
-              <Image
-                src={"/svgs/smiling-lady-img.svg"}
-                alt=""
-                width={457}
-                height={508}
-              />
+              <picture>
+                {/* Desktop */}
+                <source
+                  media="(min-width: 1024px)"
+                  srcSet="/svgs/smiling-lady-img.svg"
+                  width={457}
+                  height={508}
+                />
+
+                <Image
+                  src={"/svgs/smiling-lady-img-mobile.svg"}
+                  alt=""
+                  width={390}
+                  height={524}
+                />
+              </picture>
             </div>
           </div>
         </div>

@@ -5,9 +5,7 @@
   margin-inline: auto;
   margin-block: 0;
 
-  @media (max-width: 10px) {
-    padding-inline: rem(32);
-  }
+  padding-inline: rem(32);
 
   @media (max-width: 560px) {
     padding-inline: rem(20);
