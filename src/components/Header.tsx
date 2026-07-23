@@ -34,11 +34,11 @@ export const Header = () => {
       linkName: "gift card exchange",
     },
     {
-      url: "",
+      url: "/business",
       linkName: "for business",
     },
     {
-      url: "",
+      url: "/faqs",
       linkName: "FAQs",
     },
   ];

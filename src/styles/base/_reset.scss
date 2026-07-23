@@ -18,11 +18,11 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   line-height: var(--line-height-normal);
-  min-height: 100vh;
   font-family: var(--font-inter-sans);
   overflow-x: hidden;
   color: var(--color-text-primary);
   letter-spacing: -0.5px;
+  min-height: 100vh;
 }
 
 img,
@@ -44,22 +44,10 @@ p {
   text-wrap: pretty;
   overflow-wrap: break-word;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     text-wrap: unset;
     overflow-wrap: unset;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-  overflow-wrap: break-word;
-  line-height: 1.1;
-  letter-spacing: -1px;
 }
 
 textarea:not([rows]) {

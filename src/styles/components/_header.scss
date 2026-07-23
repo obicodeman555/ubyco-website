@@ -13,7 +13,7 @@
   gap: rem(32);
   padding-inline: rem(100);
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     justify-content: space-between;
     padding-inline: rem(10);
     height: rem(90);
@@ -35,7 +35,7 @@
     font-weight: 400;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: none;
   }
 }
@@ -155,7 +155,7 @@
     background-color: transparent;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
     align-items: center;

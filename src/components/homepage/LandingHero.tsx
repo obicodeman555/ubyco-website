@@ -8,7 +8,7 @@ export const LandingHero = () => {
   return (
     <div className="ubycohub__landingHero">
       <div className="ubycohub__landingHero__inner container">
-        <div>
+        <div className="animateBlock">
           <Image
             src="/svgs/ubycohub-platform-trade-shot.svg"
             alt=""
@@ -17,7 +17,7 @@ export const LandingHero = () => {
           />
         </div>
         <article className="ubycohub__landingHero__writeUp">
-          <div className="ubycohub__landingHero__largeText">
+          <div className="ubycohub__landingHero__largeText animateBlock">
             <div>Fast, Secure Crypto & Gift Card</div>
             <div>
               <span>Trading Through</span>
@@ -39,13 +39,13 @@ export const LandingHero = () => {
             </div>
             <div>and Telegram</div>
           </div>
-          <p>
+          <p className="animateBlock">
             Ubycohub helps individuals and businesses sell crypto and gift cards
             securely, receive fast naira payouts, and trade directly with a real
             human support team through WhatsApp or Telegram.
           </p>
 
-          <div className="ubycohub__landingHero__cta">
+          <div className="ubycohub__landingHero__cta animateBlock">
             <button className="btn-primary">Trade on WhatsApp</button>
             <button className="btn-black">Trade on Telegram</button>
           </div>

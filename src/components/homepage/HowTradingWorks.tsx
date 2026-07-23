@@ -57,7 +57,7 @@ export const HowTradingWorks = () => {
               <div className="howTradingWorks__stepItem__avatarBg">
                 <div className="howTradingWorks__telegramShot">
                   <Image
-                    src="/svgs/ubycohub-telegram-trade-shot-sm.svg"
+                    src="/svgs/ubycohub-telegram-chat.svg"
                     alt=""
                     width={250}
                     height={209}

@@ -20,7 +20,7 @@ export const WhyChooseUbycohub = () => {
         </div>
 
         <ul className="whyChooseUs__list">
-          <li className="whyChooseUs__listItem">
+          <li className="whyChooseUs__listItem animateBlock">
             <div className="whyChooseUs__listItem__icon">
               <SecurePaymentIcon />
             </div>
@@ -32,7 +32,7 @@ export const WhyChooseUbycohub = () => {
               </p>
             </div>
           </li>
-          <li className="whyChooseUs__listItem">
+          <li className="whyChooseUs__listItem animateBlock">
             <div className="whyChooseUs__listItem__icon">
               <UserIconOutline />
             </div>
@@ -44,7 +44,7 @@ export const WhyChooseUbycohub = () => {
               </p>
             </div>
           </li>
-          <li className="whyChooseUs__listItem">
+          <li className="whyChooseUs__listItem animateBlock">
             <div className="whyChooseUs__listItem__icon">
               <BankCardOutlineIcon />
             </div>
@@ -56,7 +56,7 @@ export const WhyChooseUbycohub = () => {
               </p>
             </div>
           </li>
-          <li className="whyChooseUs__listItem">
+          <li className="whyChooseUs__listItem animateBlock">
             <div className="whyChooseUs__listItem__icon">
               <CheckMarkIcon />
             </div>
@@ -68,7 +68,7 @@ export const WhyChooseUbycohub = () => {
               </p>
             </div>
           </li>
-          <li className="whyChooseUs__listItem">
+          <li className="whyChooseUs__listItem animateBlock">
             <div className="whyChooseUs__listItem__icon">
               <ThumbUpOutlineIcon />
             </div>
@@ -80,7 +80,7 @@ export const WhyChooseUbycohub = () => {
               </p>
             </div>
           </li>
-          <li className="whyChooseUs__listItem">
+          <li className="whyChooseUs__listItem animateBlock">
             <div className="whyChooseUs__listItem__icon">
               <FlowerOutlineIcon />
             </div>

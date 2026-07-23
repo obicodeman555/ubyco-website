@@ -16,7 +16,7 @@ export const TradeWithConfidence = () => {
           </p>
         </div>
         <div className="twc__contentBlock">
-          <div>
+          <div className="animateBlock">
             <Image
               src="/svgs/ubycohub-crypto-asset-group.svg"
               alt=""
@@ -35,7 +35,7 @@ export const TradeWithConfidence = () => {
               <button className="btn-primary">Sell Crypto Now</button>
             </div>
           </div>
-          <div>
+          <div className="animateBlock">
             <Image
               src="/svgs/ubycohub-gift-cards-group.svg"
               alt=""
@@ -53,7 +53,7 @@ export const TradeWithConfidence = () => {
               <button className="btn-primary">Sell Gift Card</button>
             </div>
           </div>
-          <div>
+          <div className="animateBlock">
             <div>
               <Image
                 src="/svgs/ubycohub-platform-settlement-shot.svg"

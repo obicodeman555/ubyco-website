@@ -3,6 +3,7 @@ export { Footer } from "./Footer";
 export * from "./Logo";
 export { NavLink } from "./NavLink";
 export * from "./homepage";
+export * from "./for-business";
 export * from "./crypto-trading";
 export { default as Analytics } from "./Analytics";
 export { NairaPayoutConfirmedAvatar } from "./NairaPayoutConfirmedAvatar";

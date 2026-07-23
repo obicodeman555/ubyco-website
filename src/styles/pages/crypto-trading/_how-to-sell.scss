@@ -20,7 +20,7 @@
   grid-template-areas:
     "chat chat details details rate rate"
     "sendCrypto sendCrypto sendCrypto payout payout payout";
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "chat details"

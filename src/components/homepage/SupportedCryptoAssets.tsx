@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { type CSSProperties } from "react";
-import smilingMan from "@/assets/images/smiling-man.jpg";
 import { ApexIcon, DottedBackground } from "@/assets/svgs";
 import Link from "next/link";
 
@@ -47,7 +46,7 @@ export const SupportedCryptoAssets = () => {
         <div className="sca__bottomContent">
           <div className="sca__bottomContent__imgContainer">
             <Image
-              src={smilingMan}
+              src={"/svgs/satisfied-ubycohub-with-thumbs-up.svg"}
               alt="This reprsents a happy customer"
               width={507}
               height={584}
