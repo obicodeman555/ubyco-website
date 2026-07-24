@@ -60,20 +60,6 @@
     flex-basis: 100%;
     max-width: 100%;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: rem(-26);
-    background-color: var(--primary-red-color);
-    border-radius: 999px;
-    width: rem(43);
-    height: 6px;
-
-    @media (max-width: 900px) {
-      left: rem(160);
-    }
-  }
 }
 
 .heroContent__left__container {
@@ -86,6 +72,22 @@
   display: flex;
   flex-direction: column;
   gap: rem(20);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: rem(-26);
+    background-color: var(--primary-red-color);
+    border-radius: 999px;
+    width: rem(43);
+    height: 6px;
+    left: rem(2);
+
+    @media (max-width: 900px) {
+      left: rem(160);
+    }
+  }
 
   @media (max-width: 900px) {
     align-items: center;

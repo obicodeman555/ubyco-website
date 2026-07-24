@@ -18,7 +18,7 @@ interface IFAQItemProps {
   onToggle: () => void;
 }
 
-const FAQItem = ({ item, isOpen, onToggle }: IFAQItemProps) => {
+export const FAQItem = ({ item, isOpen, onToggle }: IFAQItemProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const [height, setHeight] = useState(0);

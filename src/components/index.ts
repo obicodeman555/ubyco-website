@@ -5,5 +5,6 @@ export { NavLink } from "./NavLink";
 export * from "./homepage";
 export * from "./for-business";
 export * from "./crypto-trading";
+export * from "./faq";
 export { default as Analytics } from "./Analytics";
 export { NairaPayoutConfirmedAvatar } from "./NairaPayoutConfirmedAvatar";
