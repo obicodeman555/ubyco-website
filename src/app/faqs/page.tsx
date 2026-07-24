@@ -90,58 +90,56 @@ const FAQs = () => {
   return (
     <article className="actionBlock__main">
       <FAQsHero />
-      <div className="articleBlock__container">
-        <div className="faqContent__container">
-          <div className="faq__tabs__mainBlock">
-            <div className="tabButtons__container">
-              <div className="tabButtons">
-                {faqTabs.map((tab) => (
-                  <button
-                    key={tab.id}
-                    className={`${activeTab.id === tab.id ? "activeTab" : ""}`}
-                    onClick={() => setActiveTab(tab)}
-                  >
-                    {tab.label}
-                  </button>
+      <div className="faqContent__container">
+        <div className="faq__tabs__mainBlock">
+          <div className="tabButtons__container">
+            <div className="tabButtons">
+              {faqTabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  className={`${activeTab.id === tab.id ? "activeTab" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="faqsTab__contentBlock">
+            <div className="faqContent__innerBlock">
+              <ul className="faqList">
+                {activeTab?.faqs.map((faq) => (
+                  <FAQItem
+                    key={faq.id}
+                    item={faq}
+                    isOpen={opened.includes(faq.id)}
+                    onToggle={() => handleFAQToggle(faq.id)}
+                  />
                 ))}
-              </div>
-            </div>
-            <div className="faqsTab__contentBlock">
-              <div className="faqContent__innerBlock">
-                <ul className="faqList">
-                  {activeTab?.faqs.map((faq) => (
-                    <FAQItem
-                      key={faq.id}
-                      item={faq}
-                      isOpen={opened.includes(faq.id)}
-                      onToggle={() => handleFAQToggle(faq.id)}
-                    />
-                  ))}
-                </ul>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="faqsBlock__cta articleBlock__cta">
-            <p>
-              Still Have Questions? Speak with our trading desk and get direct
-              help before starting your trade.
-            </p>
-            <div className="articleBlock__cta__items">
-              <button type="button" className="btn-primary">
-                Sell Crypto on WhatsApp
-              </button>
-              <button type="button" className="btn-black">
-                Sell Crypto on Telegram
-              </button>
-            </div>
+        </div>
+        <div className="faqsBlock__cta articleBlock__cta">
+          <p>
+            Still Have Questions? Speak with our trading desk and get direct
+            help before starting your trade.
+          </p>
+          <div className="articleBlock__cta__items">
+            <button type="button" className="btn-primary">
+              Sell Crypto on WhatsApp
+            </button>
+            <button type="button" className="btn-black">
+              Sell Crypto on Telegram
+            </button>
           </div>
+        </div>
 
-          <div className="whatsAppBlurred">
-            <Image src={whatsAppIllustration} alt="" width={80} height={80} />
-          </div>
-          <div className="telegramBlurred">
-            <Image src={telegramIllustration} alt="" width={80} height={80} />
-          </div>
+        <div className="whatsAppBlurred">
+          <Image src={whatsAppIllustration} alt="" width={80} height={80} />
+        </div>
+        <div className="telegramBlurred">
+          <Image src={telegramIllustration} alt="" width={80} height={80} />
         </div>
       </div>
     </article>

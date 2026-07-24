@@ -2,6 +2,12 @@
 
 .hero__mainContainer__faq.hero__mainContainer {
   height: rem(510);
+
+  @media (max-width: 900px) {
+    height: rem(353);
+
+    margin-block-end: unset;
+  }
 }
 
 .heroContent__container__faq {
@@ -18,6 +24,9 @@
     align-items: center;
     &::before {
       left: rem(220);
+      @media (max-width: 900px) {
+        left: rem(164);
+      }
     }
 
     & > p {
@@ -29,6 +38,17 @@
 .heroContent__faq.heroContent {
   padding-block-start: rem(89);
   padding-block-end: rem(113);
+
+  @media (max-width: 900px) {
+    padding-block-start: rem(54);
+    padding-block-end: rem(94);
+  }
+}
+
+.faq__tabs__mainBlock {
+  max-width: 100%;
+  padding-inline: rem(20);
+  padding-block-start: rem(24);
 }
 
 .faqContent__container {
@@ -39,6 +59,12 @@
   padding-block-start: rem(52);
   padding-block-end: rem(148);
   position: relative;
+
+  @media (max-width: 900px) {
+    padding-block-start: rem(33);
+    padding-block-end: rem(94);
+    width: 100%;
+  }
 }
 
 .tabButtons__container {
@@ -98,6 +124,10 @@
 
 .faqsTab__contentBlock {
   margin-block-start: rem(76);
+
+  @media (max-width: 900px) {
+    margin-block-start: rem(54);
+  }
 }
 
 .faqsTab__contentBlock > .faqContent__innerBlock > .faqList {
